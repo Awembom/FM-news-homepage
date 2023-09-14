@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1440px;
+    width: 80%;
+    background-color: whitesmoke;
+    margin: auto;
+}
+
+.toggle-btn {
+    position: absolute;
+    right: 1.5rem;
+    top: 4rem;
+    height: 0px;
+    overflow: hidden;
+    background: transparent;
+    border: none;
+
+}
+
+.toggle-btn:hover {
+    background: red;
+}
+
+
+.close-btn {
+    background: transparent;
+    border: none;
+    overflow: hidden;
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+}
+
+@media (min-width: 768px){
+    .close-btn {
+        display: none;
+    }
+}
+
+nav {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-top: 50px;   
+     margin-bottom: 35px;
+
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color: hsl(236, 8%, 79%);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav ul li:hover {
+    color: hsl(5, 85%, 63%);
+    transition: 0,5s;
+}
+
+.border {
+    border-bottom: hsl(35, 28%, 76%) solid 3px;
+    margin: 35px 0 35px 0;
+}
+
+.container_pic img {
+    width: 100%;
+    height: auto;
+   
+}
+
+.container {
+    width: 80%;
+    /* background: rgb(126, 118, 118); */
+    margin: auto;
+    display: block;
+    line-height: 2.0rem;
+}
+
+.container h4 {
+    color:hsl(36, 100%, 99%);
+    font-weight: 600;
+}
+.container p {
+    color:hsl(35, 28%, 76%);
+
+}
+
+.container h3 {
+    margin: 10px 0 10px 0;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    color:hsl(35, 77%, 62%);
+
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(0.5fr, 1fr));
+    
+    gap: 30px;
+}
+
+.container_pic {
+    grid-column: 1 / 3;
+}
+
+.black-contents {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+    background: hsl(240, 100%, 5%);
+}
+
+.lead_content h2 {
+    font-size: 55px;
+    text-align: left;
+}
+
+.follow-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.follow-content p {
+    line-height: 1.5;
+}
+
+.read_more {
+    width: 50%;
+    padding: 15px;
+    background: hsl(5, 85%, 63%);
+    font-size: medium;
+    border: none;
+    color: hsl(36, 100%, 99%);
+}
+
+.read_more:hover {
+    background: hsl(240, 100%, 5%);
+    transition: 0.5s;
+}
+
+.content01 {
+    display: flex;
+    
+}
+
+.content01 img {
+    width: auto;
+    height: auto;
+}
+
+.content01 h3 {
+    font-size: 25px;
+    font-weight: 200;
+    color: rgba(73, 69, 69, 0.233);
+}
+
+.design {
+    display: block;
+    line-height: 2.5rem;
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    height: 100px; 
+    margin-top: 90px;
+    
+}
+    .attribution a { color: hsl(228, 45%, 44%); }
+    
+    
+
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    
+    .container_pic {
+        grid-column: 1;
+        grid-row: 1;
+        background-image: url("assets/images/image-web-3-mobile.jpg");
+    }
+
+    .black-contents {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .lead_content {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .follow-content {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    
+
+    .content:nth-of-type(6) {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    .toggle-btn {
+        height: auto;
+    }
+
+    .div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navigation a:nth-of-type(1) {
+        margin-top: 7rem;
+    }
+
+    .navigation a {
+        display: block;
+    }
+    .navigation  {
+        background-color: hsl(36, 100%, 99%);
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 60%;
+        height: 100%;
+        transform: translate(100%);
+        color: black;
+        font-size: 20px;
+        /* display: none; */
+    }
+
+    .navigation button {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .change {
+        transform: translate(0);
+    }
+
+    nav ul li {
+        color: black;
+    }
+    
+  }
+
+
+    
+    
+
+
